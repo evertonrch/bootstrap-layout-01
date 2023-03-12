@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,13 +15,20 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>fruta e fruto</title>
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand header-darkred" href="#">fruto & fruta</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,12 +52,13 @@
               >
             </li>
             <li><a class="nav-item nav-link" href="#">Receitas</a></li>
-            <li><a class="nav-item nav-link">Quem somos</a></li>
+            <li><a class="nav-item nav-link" href="#">Quem somos</a></li>
             <li>
               <a
                 class="nav-item nav-link"
                 data-toggle="modal"
                 data-target="#contact-modal"
+                href="#"
                 >Contatos</a
               >
             </li>
@@ -221,6 +229,27 @@
       </section>
     </main>
 
+    <footer
+      class="bg-dark p-3 m-0 text-center text-white d-flex flex-column align-items-start"
+    >
+      <span class="d-flex align-items-center justify-content-center text-info">
+        <a class="text-reset" href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <small class="ml-2 text-white font-italic">In/frutoefruta</small>
+      </span>
+      <span class="d-flex align-items-center justify-content-center text-info">
+        <a class="text-reset" href="#"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+        <small class="ml-2 text-white font-italic">t/frutoefruta</small>
+      </span>
+      <span class="d-flex align-items-center justify-content-center text-info">
+        <a class="text-reset" href="#"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <small class="ml-2 text-white font-italic">@frutoefruta</small>
+      </span>
+    </footer>
+
     <!-- Modal -->
     <div
       class="modal fade"
@@ -230,9 +259,9 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <dialog class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact form</h5>
             <button
               type="button"
               class="close"
@@ -241,9 +270,44 @@
             >
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
+          </header>
+          <main class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="emailHelp"
+                  placeholder="Type your name..."
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Type your email..."
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <label for="textArea">Comment</label>
+              <div class="form-group">
+                <textarea
+                  id="textArea"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Leave a comment"
+                ></textarea>
+              </div>
+            </form>
+          </main>
+          <footer class="modal-footer">
             <button
               type="button"
               class="btn btn-secondary"
@@ -251,17 +315,11 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
+            <button type="button" class="btn btn-modal">Send</button>
+          </footer>
+        </dialog>
       </div>
     </div>
-
-    <p>
-      contato:<a href="mailto:email@frutafruto.com.br"
-        >email@frutafruto.com.br</a
-      >
-    </p>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
