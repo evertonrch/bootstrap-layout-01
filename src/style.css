@@ -21,7 +21,7 @@ h1 {
   border: 1px solid darkred;
 } */
 
-body > .card {
+.wrapper-card .card {
   border-color: darkred;
 }
 
