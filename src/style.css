@@ -12,6 +12,20 @@ h1 {
   font-family: "Pacifico", cursive;
 }
 
-.darkred-header {
+.header-darkred {
   color: darkred;
+}
+
+/* .card-body,
+.card-img-top {
+  border: 1px solid darkred;
+} */
+
+body > .card {
+  border-color: darkred;
+}
+
+.card .btn-card {
+  background-color: darkred;
+  color: #fff;
 }
