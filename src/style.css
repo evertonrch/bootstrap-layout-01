@@ -11,3 +11,7 @@
 h1 {
   font-family: "Pacifico", cursive;
 }
+
+.darkred-header {
+  color: darkred;
+}
